@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wisman Cash Point offers various services including M-Pesa, Airtel Money, and more.">
+  <meta name="keywords" content="Wisman Cash Point, M-Pesa, Airtel Money, financial services">
+  <title>WISMAN CASH POINT</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;  /* Center horizontally */
+      align-items: center;      /* Center vertically */
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      background-color: #f9f9f9;
+      height: 100vh;  /* Full height of the viewport */
+      text-align: center;
+    }
+
+    /* Container for the table */
+    .table-container {
+      width: 100%;
+      max-width: 420px;
+      margin: 20px;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      table-layout: auto;
+    }
+
+    .table-responsive {
+      overflow-x: auto;
+    }
+
+    table th, table td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
+    }
+
+    thead th {
+      background-color: #fff;
+      border: 1px solid #0000ff;
+      color: #0000ff;
+      padding: 12px;
+      border-bottom: 2px solid #ddd;
+    }
+
+    tbody tr:hover {
+      background-color: #e0e0e0;
+    }
+
+    p {
+      line-height: 1.8rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    span {
+      width: auto;
+      padding: 2px 7px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    .number {
+      background-color: #0000ff;
+      color: yellow;
+    }
+
+    .number2 {
+      background-color: orange;
+      color: #fff;
+    }
+
+    .number3 {
+      background-color: crimson;
+      color: #fff;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .table-container {
+        width: 90%;
+      }
+
+      table {
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .star-rating {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .table-container {
+        width: 100%;
+        padding: 0;
+      }
+
+      table {
+        font-size: 12px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .star-rating {
+        font-size: 1.2rem;
+      }
+    }
+
+    /* Star Rating Styles */
+    .star-rating {
+      display: flex;
+      justify-content: center;
+      gap: 0px;
+      font-size: 2rem;
+      margin: 1px 0;
+      background-color: #fff;
+      border-radius: 42px;
+      border: 1px solid gold;
+    }
+
+    .star {
+      cursor: pointer;
+      color: #ccc;
+    }
+
+    .star.active {
+      color: gold;
+    }
+  </style>
+</head>
+<body>
+  <p><strong>WISMAN CASH POINT ROOM 31 BLOCK-07</strong></p>
+  <div class="table-container">
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr style="background-color: #0000ff; color: #fff;">
+            <th>SERVICE</th>
+            <th>AGENT ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background-color: #ff0000; color: #fff;">
+            <td>M PESA</td>
+            <td>5468790</td>
+          </tr>
+          <tr style="background-color: crimson; color: #fff;">
+            <td>AIRTEL MONEY</td>
+            <td>2819839</td>
+          </tr>
+          <tr style="background-color: orange; color: #fff;">
+            <td>HALOPESA</td>
+            <td>2814520</td>
+          </tr>
+          <tr style="background-color: #ff0000; color: #fff;">
+            <td>LIPA NUMBER VODA</td>
+            <td>2819839</td>
+          </tr>
+          <tr style="background-color: orange; color: #fff;">
+            <td>LIPA NUMBER HALOTEL</td>
+            <td>23251224</td>
+          </tr>
+          <tr style="background-color: #0000ff; color: yellow;">
+            <td>LIPA NUMBER TIGO</td>
+            <td>17909695</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <p>Welcome to Wisman Cash Point open 24 Hours for You.<br>
+   Call Us: <span class="number">0679600536</span> <span class="number2">0617048536</span> <span class="number3">0687171615</span></p>
+  
+  <!-- Star Rating Section -->
+  <p>==========5 STARS CASHING SERVICES==========</p>
+  <div class="star-rating">
+    <span class="star" data-value="1">&#9733;</span>
+    <span class="star" data-value="2">&#9733;</span>
+    <span class="star" data-value="3">&#9733;</span>
+    <span class="star" data-value="4">&#9733;</span>
+    <span class="star" data-value="5">&#9733;</span>
+  </div>
+  
+  <script>
+    // Star Rating Script
+    const stars = document.querySelectorAll('.star');
+    stars.forEach(star => {
+      star.addEventListener('click', function() {
+        const rating = this.getAttribute('data-value');
+        stars.forEach(s => {
+          s.classList.remove('active');
+        });
+        for (let i = 0; i < rating; i++) {
+          stars[i].classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
